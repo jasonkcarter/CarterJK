@@ -19,9 +19,8 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
-    margin: 0 1.5em;
 }
 
 /*
@@ -94,11 +93,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body, a, p, td, th {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
 
+body {
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #222222;
+    background-image: url(/Images/diagmonds.png);
+    background-position: bottom center;
+    background-repeat: repeat;
 
+}
 
+#container {
+    width: 742px;
+    position: absolute;
+    margin-left: -371px;
+    left: 50%;
+    min-height: 100%;
+    background-color:white;
+    border-right: 2px solid #eee;
+    border-left: 2px solid #eee;
+}
 
-
+#body {
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -moz-transform: translate(0,0);
+    transform: translate3d(0,0,0);
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    padding: 20px;
+    }
 
 
 
