@@ -24,7 +24,7 @@ namespace CarterJK
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             // Comment the following out to disable optimizations in debug mode
-            BundleTable.EnableOptimizations = true;
+            //BundleTable.EnableOptimizations = true;
         }
     }
 }

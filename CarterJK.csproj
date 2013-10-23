@@ -157,6 +157,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\home.css" />
+    <Content Include="Content\home.min.css">
+      <DependentUpon>home.css</DependentUpon>
+    </Content>
     <Content Include="Content\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
