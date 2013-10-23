@@ -82,6 +82,12 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
+    border: 1px none;
+}
+
+#menu-tiles a:hover {
+    margin: 1px;
+    border: 2px solid gray;
 }
 
 #menu-tiles a span {
@@ -131,7 +137,7 @@
 #tile-3.rightRotate {
     -webkit-transition: 200ms 60ms;
     -moz-transition: 200ms 60ms;
-    -o-transition: 200ms 60ms;
+    -o-transition:  200ms 60ms;
     transition: 200ms 60ms;
 }
 

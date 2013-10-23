@@ -25,6 +25,9 @@
         require(["jquery"], function($) {
             $(function () {
                 $('#menu-tiles a').addClass('rightRotate').removeClass('leftRotate');
+        setTimeout(function() {
+            $('#menu-tiles a').removeClass('rightRotate');
+        }, 400);
             });
         });
     </script>
