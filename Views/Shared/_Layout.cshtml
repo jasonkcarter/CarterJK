@@ -48,7 +48,7 @@
                     }
                 </div>
             </section>
-            <header><span id="heading">@ViewBag.Heading</span><div id="top-nav">@RenderSection("Nav", required: false)</div></header>
+            <header><div id="top-nav">@RenderSection("Nav", required: false)</div><span id="heading">@ViewBag.Heading</span></header>
             
             <div id="body">
                 @RenderBody()

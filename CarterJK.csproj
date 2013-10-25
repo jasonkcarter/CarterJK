@@ -203,6 +203,10 @@
     <Content Include="Scripts\require.min.js">
       <DependentUpon>require.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js">
+      <DependentUpon>respond.js</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -226,6 +230,9 @@
     <Content Include="Views\Home\Martial-Arts.cshtml" />
     <Content Include="Views\Home\About-Me.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Scripts\respond.min.js.map">
+      <DependentUpon>respond.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

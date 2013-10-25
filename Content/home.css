@@ -2,21 +2,6 @@
 header {
     margin-top: 20px;
 }
-#title {
-    font-size: 1em;
-    width: 250px;
-    position: absolute;
-    height: 137px;
-    top: 490px;
-    right: 20px;
-}
-#title div {
-    position: absolute;
-    max-width: 230px;
-    bottom: 10px;
-    right: 10px;
-    text-align: right;
-}
 #top-nav {
     background-color: #333;
 }
@@ -48,9 +33,10 @@ header {
     -ms-perspective: 800px;
     -moz-perspective: 800px;
     perspective: 800px;
-    width: 441px;
+    width: 100%;
     top: 20px;
-    left: 20px;
+    left: 0;
+    padding: 0;
     position: absolute;
 }
 
@@ -166,4 +152,34 @@ header {
     -o-transform: translate3d(0,0,0) rotateY(0);
     transform: translate3d(0,0,0) rotateY(0);
     opacity: 1;
+}
+
+
+@media (min-width: 741px) {
+    #title {
+        font-size: 1em;
+        width: 250px;
+        position: absolute;
+        height: 137px;
+        top: 490px;
+        right: 20px;
+    }
+
+    #title div {
+        position: absolute;
+        max-width: 230px;
+        bottom: 10px;
+        right: 10px;
+        text-align: right;
+    }
+
+    #subtitle {
+        float: none;
+    }
+
+    #menu-tiles {
+        width: 441px;
+        left: 20px;
+        padding: 0;
+    }
 }
