@@ -1,10 +1,22 @@
-﻿<!DOCTYPE html>
+﻿@using CarterJK
+@{
+    if (ViewBag.Title == null)
+    {
+        ViewBag.Title = Html.GetRouteData("viewName").Replace('-', ' ') + " | Jason Carter";
+    }
+    if (ViewBag.Heading == null)
+    {
+        ViewBag.Heading = Html.GetRouteData("viewName").Replace('-', ' ');
+    }
+}
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>@ViewBag.Title</title>
         @Styles.Render("~/Content/css")
+        @RenderSection("Styles", required: false)
         @Scripts.Render("~/bundles/modernizr")
         <!--[if lt IE 9]>
             <script type="text/javascript">
@@ -27,12 +39,23 @@
     </head>
     <body>
         <div id="container">
+            <section id="title">
+                <div>
+                    <h1><a href="/">Jason Carter</a></h1>
+                    @if (ViewBag.Subtitle != null)
+                    {
+                        <p id="subtitle">@ViewBag.Subtitle</p>
+                    }
+                </div>
+            </section>
+            <header><span id="heading">@ViewBag.Heading</span><div id="top-nav">@RenderSection("Nav", required: false)</div></header>
+            
             <div id="body">
                 @RenderBody()
             </div>
         </div>
         
         
-        @RenderSection("scripts", required: false)
+        @RenderSection("Scripts", required: false)
     </body>
 </html>

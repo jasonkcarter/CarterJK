@@ -1,13 +1,15 @@
-﻿#title {
-    color: white;
-    background-color: #191970;
+﻿
+header {
+    margin-top: 20px;
+}
+#title {
+    font-size: 1em;
     width: 250px;
     position: absolute;
     height: 137px;
-    top: 487px;
+    top: 490px;
     right: 20px;
 }
-
 #title div {
     position: absolute;
     max-width: 230px;
@@ -15,39 +17,18 @@
     right: 10px;
     text-align: right;
 }
-
-#title h1 {
-    font-size: 2em;
-    font-weight: normal;
-    margin: 0;
-    line-height: 1.5em;
+#top-nav {
+    background-color: #333;
 }
-
-#subtitle {
-    margin: 0;
-    font-style: italic;
-}
-
-#greeting {
-    width: 426px;
-    height: 148px;
-    font-size: 3em;
-    font-weight: lighter;
-    color: purple;
-    text-align: right;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-#greeting-image {
-    position: absolute;
-    top: 35px;
-    right: 20px;
+#top-nav img {
+    width: 250px;
+    height: 125px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 
 #photo-gallery {
-    top: 191px;
+    top: 23px;
     right: 20px;
     position: absolute;
 }
@@ -68,7 +49,7 @@
     -moz-perspective: 800px;
     perspective: 800px;
     width: 441px;
-    top: 188px;
+    top: 20px;
     left: 20px;
     position: absolute;
 }

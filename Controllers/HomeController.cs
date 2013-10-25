@@ -1,16 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace CarterJK.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        #region Methods (7) 
+
+        // Public Methods (7) 
+
+        public ActionResult Index(string viewName)
         {
-            return View();
+            return View(viewName);
         }
+
+        #endregion Methods 
     }
 }

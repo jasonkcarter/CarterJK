@@ -1,25 +1,24 @@
-﻿    
-    @Styles.Render("~/Content/home.css")
-    <section id="title">
-        <div>
-            <h1>Jason Carter</h1>
-            <p id="subtitle">(note: not a British actor)</p>
-        </div>
-    </section>
-    <section id="greeting-image"><img src="/Images/friendly-headshot.jpg" alt="Friendly Headshot" /></section>
-    <section id="greeting">Welcome to my digital abode.</section>
+﻿@{
+    ViewBag.Title = "Jason Carter's Home Page";
+    ViewBag.Subtitle = "(Note: not a British actor)";
+    ViewBag.Heading = "Welcome to my digital abode";
+}
+@section Nav{<img src="/Images/friendly-headshot.jpg" alt="Friendly Headshot" />}
     <section id="photo-gallery">
-        <a id="photo-gallery-tile" href="/Photos"><span>Photo Gallery</span></a>
+        <a id="photo-gallery-tile" href="http://www.flickr.com/photos/carterjk/sets"><span>Photo Gallery</span></a>
     </section>
     <section id="menu-tiles">
         <a id="tile-1" href="About-Me" class="leftRotate"><span>About Me</span></a>
         <a id="tile-2" href="Gaming" class="leftRotate"><span>Gaming</span></a>
         <a id="tile-3" href="Portfolio" class="leftRotate"><span>Portfolio</span></a>
-        <a id="tile-4" href="Outdoor-Activity" class="leftRotate"><span>Outdoor Activity</span></a>
-        <a id="tile-5" href="Online-Activity" class="leftRotate"><span>Online Activity</span></a>
+        <a id="tile-4" href="Outdoor-Activities" class="leftRotate"><span>Outdoor Activities</span></a>
+        <a id="tile-5" href="Social-Media" class="leftRotate"><span>Social Media</span></a>
         <a id="tile-6" href="Blog" class="leftRotate"><span>Blog</span></a>
         <a id="tile-7" href="Martial-Arts" class="leftRotate"><span>Martial Arts</span></a>
-    </section>
+    </section>    
+@section Styles {
+    @Styles.Render("~/Content/home.css")
+}
 @section Scripts {
     <script type="text/javascript">
         require(["jquery"], function($) {

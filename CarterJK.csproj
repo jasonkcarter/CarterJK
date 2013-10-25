@@ -133,6 +133,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SeoRouteHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
@@ -154,6 +155,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -218,6 +220,12 @@
     <Content Include="Scripts\require.min.js.map">
       <DependentUpon>require.js</DependentUpon>
     </Content>
+    <Content Include="Views\Home\Outdoor-Activities.cshtml" />
+    <Content Include="Views\Home\Gaming.cshtml" />
+    <Content Include="Views\Home\Social-Media.cshtml" />
+    <Content Include="Views\Home\Martial-Arts.cshtml" />
+    <Content Include="Views\Home\About-Me.cshtml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
