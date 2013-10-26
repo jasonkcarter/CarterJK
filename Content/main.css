@@ -19,7 +19,7 @@ textarea {
 }
 
 body {
-    font-size: 1.1em;
+    font-size: 1.05em;
     line-height: 1.4;
 }
 
@@ -174,13 +174,13 @@ h5 {
 }
 
 header {
-    font-size: 3em;
     font-weight: lighter;
     color: purple;
     margin-left: 20px;
     display: block;
 }
 #heading {
+    font-size: 3em;
     text-align: right;
     width: 427px;
     display: inline-block;
@@ -326,18 +326,52 @@ header {
 @media (max-width: 741px) {
     #container {
         width: 100%;
-        font-size: 1em;
         margin-left: 0;
         left: 0;
         border: 1px none;
     }
     #heading {
+        font-size: 2.3em;
         width: 100%;
         margin-left:-20px;
         margin-right: -20px;
     }
     #top-nav {
         width: 100%;
+    }
+}
+@media (min-width: 637px) and (max-width: 741px) {
+    body {
+        font-size: 1.05em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    h4, h5 {
+        font-size: 1.0em;
+    }
+}
+@media (max-width: 636px) {
+    body {
+        font-size: 0.85em;
+    }
+    h1 {
+        font-size: 1.1em;
+    }
+    h2 {
+        font-size: 1.0em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+    h4, h5 {
+        font-size: 0.8em;
     }
 }
 

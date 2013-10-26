@@ -12,16 +12,10 @@ header {
     margin-bottom: 13px;
 }
 
-#photo-gallery {
-    top: 23px;
-    right: 20px;
-    position: absolute;
-}
-
 #photo-gallery a {
     height: 285px;
     width: 250px;
-    color: black;
+    color: white;
     display: inline-block;
     text-decoration: none;
     position: relative;
@@ -34,48 +28,51 @@ header {
     -moz-perspective: 800px;
     perspective: 800px;
     width: 100%;
-    top: 20px;
-    left: 0;
-    padding: 0;
-    position: absolute;
 }
 
 #menu-tiles a {
     width: 137px;
     height: 137px;
-    margin: 3px;
+    margin: 0 4px 4px 0;
     background-color: #4682b4;
     color: white;
-    position: relative;
     display: inline-block;
     text-decoration: none;
-    border: 1px none;
+    border: 2px solid white;
+    vertical-align: top;
+    position: relative;
 }
 
 #menu-tiles a:hover {
-    margin: 1px;
-    border: 2px solid gray;
-}
-
-#menu-tiles a span {
-    max-width: 114px;
+    border-color: gray;
 }
 
 #menu-tiles a span, #photo-gallery a span {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    max-width: 114px;
-    text-align: right;
+    display: inline-block;
     cursor: hand;
     cursor: pointer;
+    text-align: right;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-#menu-tiles a#tile-1, #menu-tiles a#tile-3 {
-    width: 285px;
+#photo-gallery a span {
+    background: black;
+    opacity: .7;
+}
+#featured-tiles {
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
-#menu-tiles a#tile-1, #menu-tiles a#tile-3, #menu-tiles a#tile-5 {
+#featured-tiles a {
+    width: 282px;
+}
+
+#menu-tiles a#tile-1, #menu-tiles a#tile-2, #menu-tiles a#tile-5 {
     -webkit-transform-origin-x: -8px;
 }
 
@@ -83,7 +80,7 @@ header {
     -webkit-transform-origin-x: -130px;
 }
 
-#menu-tiles a#tile-2, #menu-tiles a#tile-4, #menu-tiles a#tile-7 {
+#menu-tiles a#tile-3, #menu-tiles a#tile-4, #menu-tiles a#tile-7 {
     -webkit-transform-origin-x: -260px;
 }
 
@@ -155,13 +152,21 @@ header {
 }
 
 
-@media (min-width: 741px) {
+@media (min-width: 494px) and (max-width: 636px) {
+    #featured-tiles {
+        display: inline-block;
+        width: 286px;
+        float: left;
+        margin-right: 4px;
+    }
+}
+@media (min-width: 742px) {
     #title {
         font-size: 1em;
         width: 250px;
         position: absolute;
         height: 137px;
-        top: 490px;
+        top: 475px;
         right: 20px;
     }
 
@@ -179,7 +184,14 @@ header {
 
     #menu-tiles {
         width: 441px;
-        left: 20px;
-        padding: 0;
+    }
+    #photo-gallery {
+        float: right;
+    }
+    #featured-tiles {
+        display: inline-block;
+        width: 286px;
+        float: left;
+        margin-right: 4px;
     }
 }
