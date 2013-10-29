@@ -164,47 +164,31 @@ h5 {
     display: inline;
 }
 
-#subtitle {
-    margin: 0;
-    font-style: italic;
-    display: inline;
-    line-height: 1.5em;
-    vertical-align: text-bottom;
-    float: left;
-}
-
 header {
     font-weight: lighter;
     color: purple;
-    margin-left: 20px;
     display: block;
 }
+
 #heading {
-    font-size: 2.6em;
-    text-align: right;
-    width: 427px;
     display: inline-block;
+    font-size: 2.3em;
+    width: 100%;
+    min-height: 0;
+    text-align: center;
     border-bottom: 3px solid purple;
-    min-height: 148px;
-    position: relative;
 }
 #heading span {
-    padding-right: 12px;
+    padding: 0 20px;
+    white-space: normal;
     display: inline-block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
 }
 #top-nav {
-    text-align: right;
-    vertical-align: text-top;
-    width: 282px;
-    height: 100%;
-    display: inline-block;
-    margin-right: 22px;
-    background-color: purple;
-    float: right;
+    display: none;
+    margin: 0 0 0 0;
 }
+
 
 #body {
     -webkit-transform: translate3d(0,0,0);
@@ -216,7 +200,8 @@ header {
     transform: translate3d(0,0,0);
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    padding: 20px 16px 20px 20px;
+    padding: 0 16px 20px 20px;
+    margin-top: 16px;
     position: relative;
     clear: both;
     }
@@ -328,9 +313,7 @@ header {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
    ========================================================================== */
 
 @media (max-width: 769px) {
@@ -344,22 +327,6 @@ header {
         margin-left: 0;
         left: 0;
         border: 1px none;
-    }
-    #heading {
-        font-size: 2.3em;
-        width: 100%;
-        min-height: 0;
-        text-align: center;
-    }
-    #heading span {
-        padding: 0 20px;
-        white-space: normal;
-        display: inline-block;
-        position: relative;
-    }
-    #top-nav {
-        display: none;
-        margin: 0 0 0 0;
     }
 }
 @media (min-width: 582px) and (max-width: 769px) {
@@ -400,6 +367,12 @@ header {
 @media (max-width: 484px) {
     #heading {
         font-size: 2.0em;
+    }
+}
+
+@media (max-width: 346px) {
+    #body {
+        padding-right: 20px;
     }
 }
 
