@@ -6,20 +6,21 @@ header {
     background-color: #333;
 }
 #top-nav img {
-    width: 250px;
-    height: 125px;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    width: 282px;
+    height: 151px;
+    /*margin-top: 13px;
+    margin-bottom: 13px;*/
 }
 
 #photo-gallery a {
-    height: 285px;
-    width: 250px;
+    height: 282px;
+    width: 282px;
     color: white;
     display: inline-block;
     text-decoration: none;
     position: relative;
-    background-image: url('/Images/waterfall.jpg');
+    background-image: url('/Images/gallery-butterfly-large.jpg');
+    border: 2px solid white;
 }
 
 #menu-tiles {
@@ -43,7 +44,7 @@ header {
     position: relative;
 }
 
-#menu-tiles a:hover {
+#menu-tiles a:hover, #photo-gallery a:hover {
     border-color: gray;
 }
 
@@ -150,24 +151,73 @@ header {
     transform: translate3d(0,0,0) rotateY(0);
     opacity: 1;
 }
-
-
-@media (min-width: 494px) and (max-width: 636px) {
-    #featured-tiles {
-        display: inline-block;
-        width: 286px;
-        float: left;
-        margin-right: 4px;
+@media (max-width: 781px) {
+    #photo-gallery {
+        display: inline;
+        vertical-align: top;
+    }
+    #photo-gallery a {
+        height: 137px;
+        background-image: url('/Images/gallery-butterfly-double.jpg');
+    }
+    #menu-tiles {
+        display: inline;
+        vertical-align: top;
     }
 }
-@media (min-width: 742px) {
+@media (max-width: 346px) {
+    #photo-gallery a {
+        height: 70px;
+        width: 100%;
+    }
+    #featured-tiles a {
+        width: 100%;
+    }
+    #menu-tiles a {
+        width: 100%;
+        height: 70px;
+    }
+}
+@media (min-width: 782px) {
+    #photo-gallery {
+        float: right;
+    }
+}
+@media (min-width: 347px) and (max-width: 474px) {
+    #body {
+        width: 290px;
+        position: relative;
+        left: 50%;
+        margin-left: -165px;
+    }
+}
+@media (min-width: 475px) and (max-width: 620px) {
+    #body {
+        width: 436px;
+        position: relative;
+        left: 50%;
+        margin-left: -238px;
+    }
+}
+@media (min-width: 621px) and (max-width: 781px) {
+    #body {
+        width: 582px;
+        position: relative;
+        left: 50%;
+        margin-left: -311px;
+    }
+    #photo-gallery-tile {
+        margin-right: 8px;
+    }
+}
+@media (min-width: 782px) {
     #title {
         font-size: 1em;
-        width: 250px;
+        width: 282px;
         position: absolute;
         height: 137px;
         top: 483px;
-        right: 20px;
+        right: 22px;
     }
 
     #title div {
@@ -184,9 +234,6 @@ header {
 
     #menu-tiles {
         width: 441px;
-    }
-    #photo-gallery {
-        float: right;
     }
     #featured-tiles {
         display: inline-block;

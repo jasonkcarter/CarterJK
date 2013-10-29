@@ -101,7 +101,7 @@ body {
     margin-left: 2em;
     margin-right: 2em;
     background-color: #222222;
-    background-image: url(/Images/diagmonds.png);
+    background-image: url(/Images/subtle_carbon.png);
     background-position: bottom center;
     background-repeat: repeat;
 
@@ -128,14 +128,14 @@ h5 {
 }
 
 #container {
-    width: 742px;
+    width: 774px;
     position: absolute;
-    margin-left: -371px;
+    margin-left: -387px;
     left: 50%;
     min-height: 100%;
     background-color:white;
-    border-right: 2px solid #eee;
-    border-left: 2px solid #eee;
+    border-right: 2px solid #b3d4fc;
+    border-left: 2px solid #b3d4fc;
 }
 
 #title {
@@ -189,10 +189,10 @@ header {
 #top-nav {
     text-align: right;
     vertical-align: text-top;
-    width: 250px;
+    width: 282px;
     height: 100%;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 22px;
     background-color: purple;
     float: right;
 }
@@ -324,11 +324,11 @@ header {
    Modify as content requires.
    ========================================================================== */
 
-@media (max-width: 741px) {
+@media (max-width: 781px) {
     header {
         width: 100%;
         padding: 0;
-        margin: 0 -20px;
+        margin: 0 0 0 0;
     }
     #container {
         width: 100%;
@@ -337,16 +337,20 @@ header {
         border: 1px none;
     }
     #heading {
-        width: 100%;
         font-size: 2.3em;
+        width: 100%;
+    }
+    #heading span {
         padding: 0 20px;
-        margin: 0 -20px;
+        white-space: normal;
+        display: inline-block;
     }
     #top-nav {
         display: none;
+        margin: 0 0 0 0;
     }
 }
-@media (min-width: 637px) and (max-width: 741px) {
+@media (min-width: 582px) and (max-width: 781px) {
     body {
         font-size: 1.05em;
     }
@@ -363,7 +367,7 @@ header {
         font-size: 1.0em;
     }
 }
-@media (max-width: 636px) {
+@media (max-width: 581px) {
     body {
         font-size: 0.85em;
     }
@@ -378,6 +382,12 @@ header {
     }
     h4, h5 {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width: 474px) {
+    #heading {
+        font-size: 2.0em;
     }
 }
 

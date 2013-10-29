@@ -186,8 +186,16 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
+    <Content Include="Images\dark_mosaic.png" />
+    <Content Include="Images\dark_mosaic_%402X.png" />
     <Content Include="Images\diagmonds.png" />
     <Content Include="Images\friendly-headshot.jpg" />
+    <Content Include="Images\gallery-butterfly-double.jpg" />
+    <Content Include="Images\gallery-butterfly-large.jpg" />
+    <Content Include="Images\gallery-butterfly-small.jpg" />
+    <Content Include="Images\joy-in-the-fall.jpg" />
+    <Content Include="Images\subtle_carbon.png" />
+    <Content Include="Images\subtle_carbon_%402X.png" />
     <Content Include="Images\waterfall.jpg" />
     <Content Include="Scripts\html5shiv-printshiv.js" />
     <Content Include="Scripts\html5shiv-printshiv.min.js" />
