@@ -128,9 +128,9 @@ h5 {
 }
 
 #container {
-    width: 774px;
+    width: 762px;
     position: absolute;
-    margin-left: -387px;
+    margin-left: -381px;
     left: 50%;
     min-height: 100%;
     background-color:white;
@@ -180,11 +180,20 @@ header {
     display: block;
 }
 #heading {
-    font-size: 3em;
+    font-size: 2.6em;
     text-align: right;
     width: 427px;
     display: inline-block;
     border-bottom: 3px solid purple;
+    min-height: 148px;
+    position: relative;
+}
+#heading span {
+    padding-right: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 #top-nav {
     text-align: right;
@@ -207,7 +216,7 @@ header {
     transform: translate3d(0,0,0);
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    padding: 20px;
+    padding: 20px 16px 20px 20px;
     position: relative;
     clear: both;
     }
@@ -324,7 +333,7 @@ header {
    Modify as content requires.
    ========================================================================== */
 
-@media (max-width: 781px) {
+@media (max-width: 769px) {
     header {
         width: 100%;
         padding: 0;
@@ -339,18 +348,21 @@ header {
     #heading {
         font-size: 2.3em;
         width: 100%;
+        min-height: 0;
+        text-align: center;
     }
     #heading span {
         padding: 0 20px;
         white-space: normal;
         display: inline-block;
+        position: relative;
     }
     #top-nav {
         display: none;
         margin: 0 0 0 0;
     }
 }
-@media (min-width: 582px) and (max-width: 781px) {
+@media (min-width: 582px) and (max-width: 769px) {
     body {
         font-size: 1.05em;
     }
@@ -385,7 +397,7 @@ header {
     }
 }
 
-@media (max-width: 474px) {
+@media (max-width: 484px) {
     #heading {
         font-size: 2.0em;
     }

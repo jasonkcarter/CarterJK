@@ -12,7 +12,9 @@ header {
     margin-bottom: 13px;*/
 }
 
-#photo-gallery a {
+#photo-gallery-tile {
+    display: inline-block;
+    vertical-align: top;
     height: 282px;
     width: 282px;
     color: white;
@@ -21,6 +23,7 @@ header {
     position: relative;
     background-image: url('/Images/gallery-butterfly-large.jpg');
     border: 2px solid white;
+    margin: 0 4px 4px 0;
 }
 
 #menu-tiles {
@@ -44,11 +47,11 @@ header {
     position: relative;
 }
 
-#menu-tiles a:hover, #photo-gallery a:hover {
+#menu-tiles a:hover, a#photo-gallery-tile:hover {
     border-color: gray;
 }
 
-#menu-tiles a span, #photo-gallery a span {
+#menu-tiles a span, #photo-gallery-tile span {
     display: inline-block;
     cursor: hand;
     cursor: pointer;
@@ -59,9 +62,10 @@ header {
     right: 0;
 }
 
-#photo-gallery a span {
+#photo-gallery-tile span {
     background: black;
     opacity: .7;
+    filter: alpha(opacity=70);
 }
 #featured-tiles {
     display: inline;
@@ -151,12 +155,8 @@ header {
     transform: translate3d(0,0,0) rotateY(0);
     opacity: 1;
 }
-@media (max-width: 781px) {
-    #photo-gallery {
-        display: inline;
-        vertical-align: top;
-    }
-    #photo-gallery a {
+@media (max-width: 769px) {
+    #photo-gallery-tile {
         height: 137px;
         background-image: url('/Images/gallery-butterfly-double.jpg');
     }
@@ -166,7 +166,10 @@ header {
     }
 }
 @media (max-width: 346px) {
-    #photo-gallery a {
+    #body {
+        padding-right: 20px;
+    }
+    #photo-gallery-tile {
         height: 70px;
         width: 100%;
     }
@@ -178,12 +181,12 @@ header {
         height: 70px;
     }
 }
-@media (min-width: 782px) {
-    #photo-gallery {
+@media (min-width: 770px) {
+    #photo-gallery-tile {
         float: right;
     }
 }
-@media (min-width: 347px) and (max-width: 474px) {
+@media (min-width: 347px) and (max-width: 484px) {
     #body {
         width: 290px;
         position: relative;
@@ -191,32 +194,35 @@ header {
         margin-left: -165px;
     }
 }
-@media (min-width: 475px) and (max-width: 620px) {
+@media (min-width: 485px) and (max-width: 616px) {
     #body {
         width: 436px;
         position: relative;
         left: 50%;
         margin-left: -238px;
     }
+    #featured-tiles {
+        display: inline-block;
+        width: 286px;
+        float: left;
+        margin-right: 4px;
+    }
 }
-@media (min-width: 621px) and (max-width: 781px) {
+@media (min-width: 617px) and (max-width: 769px) {
     #body {
         width: 582px;
         position: relative;
         left: 50%;
         margin-left: -311px;
     }
-    #photo-gallery-tile {
-        margin-right: 8px;
-    }
 }
-@media (min-width: 782px) {
+@media (min-width: 770px) {
     #title {
         font-size: 1em;
         width: 282px;
         position: absolute;
         height: 137px;
-        top: 483px;
+        top: 488px;
         right: 22px;
     }
 
