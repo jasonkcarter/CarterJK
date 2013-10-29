@@ -26,6 +26,7 @@ namespace CarterJK
                 "~/Scripts/html5shiv-printshiv.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/main.css", "~/Content/normalize.css"));
+            bundles.Add(new StyleBundle("~/Content/homecss").Include("~/Content/home.css"));
         }
     }
 }
