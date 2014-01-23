@@ -183,17 +183,17 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <None Include="Properties\PublishProfiles\carter-dev - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\www.carterjk.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Localhost.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
-    <Content Include="Images\gallery-butterfly-double.jpg" />
-    <Content Include="Images\gallery-butterfly-large.jpg" />
-    <Content Include="Images\gallery-butterfly-small.jpg" />
-    <Content Include="Images\joy-in-the-fall.jpg" />
-    <Content Include="Images\subtle_carbon.png" />
-    <Content Include="Images\subtle_carbon_%402X.png" />
+    <Content Include="Content\Images\gallery-butterfly-double.jpg" />
+    <Content Include="Content\Images\gallery-butterfly-large.jpg" />
+    <Content Include="Content\Images\gallery-butterfly-small.jpg" />
+    <Content Include="Content\Images\joy-in-the-fall.jpg" />
+    <Content Include="Content\Images\subtle_carbon.png" />
+    <Content Include="Content\Images\subtle_carbon_%402X.png" />
     <Content Include="Scripts\html5shiv-printshiv.js" />
     <Content Include="Scripts\html5shiv-printshiv.min.js" />
     <Content Include="Scripts\html5shiv.js" />
@@ -212,7 +212,9 @@
     <Content Include="Scripts\respond.min.js">
       <DependentUpon>respond.js</DependentUpon>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -262,9 +264,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>59009</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61198/</IISUrl>
+          <IISUrl>http://localhost:30321/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

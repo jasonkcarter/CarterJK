@@ -21,7 +21,7 @@ header {
     display: inline-block;
     text-decoration: none;
     position: relative;
-    background-image: url('/Images/gallery-butterfly-large.jpg');
+    background-image: url('/Content/Images/gallery-butterfly-large.jpg');
     border: 2px solid white;
     margin: 0 4px 4px 0;
 }
@@ -163,7 +163,7 @@ header {
 @media (max-width: 769px) {
     #photo-gallery-tile {
         height: 137px;
-        background-image: url('/Images/gallery-butterfly-double.jpg');
+        background-image: url('/Content/Images/gallery-butterfly-double.jpg');
     }
     #menu-tiles {
         display: inline;
