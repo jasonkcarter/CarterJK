@@ -34,7 +34,7 @@ header {
     width: 100%;
 }
 
-#menu-tiles a {
+#menu-tiles a, #menu-tiles #tile-1 {
     width: 137px;
     height: 137px;
     margin: 0 4px 4px 0;
@@ -51,7 +51,7 @@ header {
     border-color: gray;
 }
 
-#menu-tiles a span, #photo-gallery-tile span {
+#menu-tiles a span, #photo-gallery-tile span, #menu-tiles #tile-1 span {
     display: inline-block;
     cursor: hand;
     cursor: pointer;
@@ -60,6 +60,13 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+#menu-tiles #tile-1 {
+    background-color: lightgray;
+}
+#menu-tiles #tile-1 span { 
+    cursor: default;
 }
 
 #photo-gallery-tile span {
@@ -73,11 +80,11 @@ header {
     padding: 0;
 }
 
-#featured-tiles a {
+#featured-tiles a, #featured-tiles #tile-1{
     width: 282px;
 }
 
-#menu-tiles a#tile-1, #menu-tiles a#tile-2, #menu-tiles a#tile-5 {
+#menu-tiles a#tile-1, #menu-tiles span#tile-1, #menu-tiles a#tile-2, #menu-tiles a#tile-5 {
     -webkit-transform-origin-x: -8px;
 }
 
@@ -175,10 +182,10 @@ header {
         height: 70px;
         width: 100%;
     }
-    #featured-tiles a {
+    #featured-tiles a, #featured-tiles #tile-1 {
         width: 100%;
     }
-    #menu-tiles a {
+    #menu-tiles a, #menu-tiles #tile-1 {
         width: 100%;
         height: 70px;
     }
