@@ -307,3 +307,4 @@ local_settings.py
 files/
 sites/*/files
 sites/*/private
+wp-config.php
