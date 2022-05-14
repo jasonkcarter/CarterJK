@@ -62,13 +62,6 @@ header {
     right: 0;
 }
 
-#menu-tiles #tile-1 {
-    background-color: lightgray;
-}
-#menu-tiles #tile-1 span { 
-    cursor: default;
-}
-
 #photo-gallery-tile span {
     background: black;
     opacity: .7;
