@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{452B9786-BE2E-4C88-9042-8D0FEC77B271}</ProjectGuid>
-    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CarterJK</RootNamespace>
@@ -16,10 +16,10 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <WebGreaseLibPath>packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -183,12 +183,17 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <None Include="Properties\PublishProfiles\jasoncarter.pubxml" />
+    <None Include="Properties\PublishProfiles\Localhost.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
-    <Content Include="Images\diagmonds.png" />
-    <Content Include="Images\friendly-headshot.jpg" />
-    <Content Include="Images\waterfall.jpg" />
+    <Content Include="Content\Images\gallery-butterfly-double.jpg" />
+    <Content Include="Content\Images\gallery-butterfly-large.jpg" />
+    <Content Include="Content\Images\gallery-butterfly-small.jpg" />
+    <Content Include="Content\Images\joy-in-the-fall.jpg" />
+    <Content Include="Content\Images\subtle_carbon.png" />
+    <Content Include="Content\Images\subtle_carbon_%402X.png" />
     <Content Include="Scripts\html5shiv-printshiv.js" />
     <Content Include="Scripts\html5shiv-printshiv.min.js" />
     <Content Include="Scripts\html5shiv.js" />
@@ -203,7 +208,13 @@
     <Content Include="Scripts\require.min.js">
       <DependentUpon>require.js</DependentUpon>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js">
+      <DependentUpon>respond.js</DependentUpon>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -226,6 +237,9 @@
     <Content Include="Views\Home\Martial-Arts.cshtml" />
     <Content Include="Views\Home\About-Me.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Scripts\respond.min.js.map">
+      <DependentUpon>respond.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -250,9 +264,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>59009</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61198/</IISUrl>
+          <IISUrl>http://localhost:30321/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -19,7 +19,7 @@ textarea {
 }
 
 body {
-    font-size: 1.1em;
+    font-size: 1.05em;
     line-height: 1.4;
 }
 
@@ -101,21 +101,42 @@ body {
     margin-left: 2em;
     margin-right: 2em;
     background-color: #222222;
-    background-image: url(/Images/diagmonds.png);
+    background-image: url('../Content/Images/subtle_carbon.png');
     background-position: bottom center;
     background-repeat: repeat;
 
 }
 
+h1,h2,h3,h4,h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.3em;
+}
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1.1em;
+}
+
 #container {
-    width: 742px;
+    width: 762px;
     position: absolute;
-    margin-left: -371px;
+    margin-left: -381px;
     left: 50%;
     min-height: 100%;
     background-color:white;
-    border-right: 2px solid #eee;
-    border-left: 2px solid #eee;
+    border-right: 2px solid #b3d4fc;
+    border-left: 2px solid #b3d4fc;
 }
 
 #title {
@@ -141,33 +162,38 @@ body {
     font-weight: normal;
     margin: 0;
     line-height: 1.5em;
-}
-
-#subtitle {
-    margin: 0;
-    font-style: italic;
+    display: inline;
 }
 
 header {
-    font-size: 3em;
     font-weight: lighter;
     color: purple;
-    margin-left: 20px;
     display: block;
 }
+
+a, a:visited {
+    color: purple;
+}
+
 #heading {
-    text-align: right;
-    width: 427px;
     display: inline-block;
+    font-size: 2.3em;
+    width: 100%;
+    min-height: 0;
+    text-align: center;
     border-bottom: 3px solid purple;
 }
-#top-nav {
-    vertical-align: top;
-    height: 100%;
+#heading span {
+    padding: 0 20px;
+    white-space: normal;
     display: inline-block;
-    margin-left: 25px;
-    background-color: purple;
+    position: relative;
 }
+#top-nav {
+    display: none;
+    margin: 0 0 0 0;
+}
+
 
 #body {
     -webkit-transform: translate3d(0,0,0);
@@ -179,13 +205,34 @@ header {
     transform: translate3d(0,0,0);
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    padding: 20px;
+    padding: 0 16px 20px 20px;
+    margin-top: 16px;
     position: relative;
+    clear: both;
     }
 
 
+/* Content lists and details */
+
+.content-items { padding: 0; margin: 0; list-style: none; }
+.content-items li { padding: 0; margin: 0; }
+.content-items .content-item { border-bottom: 1px solid #dbdbdb; }
+.metadata .published {
+    display: inline;
+    margin: 0 6px 0 0;
+    font-size: 1em;
+    color: #999999;
+}
 
 
+/* Pager
+***************************************************************/
+
+.pager { list-style: none; padding: 0; margin: 12px 0 0 0; }
+.pager li { float: left; padding: 0 12px 0 0; margin: 0; }
+.pager a, .pager span { font-size: 1.077em; display: block; background-color: #dbdbdb; padding: 6px 6px; color: #434343;}
+.pager a:hover { background-color: #434343; color: #fff; }
+.pager span { background-color:inherit; }
 
 
 /* ==========================================================================
@@ -290,18 +337,67 @@ header {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media (max-width: 769px) {
+    header {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+    #container {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        border: 1px none;
+    }
+}
+@media (min-width: 582px) and (max-width: 769px) {
+    body {
+        font-size: 1.05em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    h4, h5 {
+        font-size: 1.0em;
+    }
+}
+@media (max-width: 581px) {
+    body {
+        font-size: 0.85em;
+    }
+    h1 {
+        font-size: 1.1em;
+    }
+    h2 {
+        font-size: 1.0em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+    h4, h5 {
+        font-size: 0.8em;
+    }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
+@media (max-width: 484px) {
+    #heading {
+        font-size: 2.0em;
+    }
+}
+
+@media (max-width: 346px) {
+    #body {
+        padding-right: 20px;
+    }
 }
 
 /* ==========================================================================

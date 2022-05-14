@@ -38,24 +38,11 @@
         </script>
     </head>
     <body>
-        <div id="container">
-            <section id="title">
-                <div>
-                    <h1><a href="/">Jason Carter</a></h1>
-                    @if (ViewBag.Subtitle != null)
-                    {
-                        <p id="subtitle">@ViewBag.Subtitle</p>
-                    }
-                </div>
-            </section>
-            <header><span id="heading">@ViewBag.Heading</span><div id="top-nav">@RenderSection("Nav", required: false)</div></header>
-            
-            <div id="body">
-                @RenderBody()
-            </div>
-        </div>
-        
-        
+        <div id="container"
+            ><section id="title"><div><h1><a href="/">Jason Carter</a></h1></div></section
+            ><header><div id="top-nav">@RenderSection("Nav", required: false)</div><span id="heading"><span>@ViewBag.Heading</span></span></header
+            ><div id="body">@RenderBody()</div
+        ></div>
         @RenderSection("Scripts", required: false)
     </body>
 </html>
